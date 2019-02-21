@@ -1,0 +1,138 @@
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    -webkit-box-shadow: 0 10px 15px -10px #777;
+    -moz-box-shadow: 0 10px 15px -10px #777;
+    box-shadow: 0 10px 15px -10px #777;
+    margin-bottom: 5rem;
+    background-color: #EEEEEE;
+}
+
+h1,
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #CECECE;
+}
+
+.nav-row {
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    text-decoration: none;
+    cursor: pointer;
+    color: #CECECE;
+    font-size: 3rem;
+}
+
+.icons:hover {
+    text-decoration: none;
+}
+
+.portfolio-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.portfolio-title h1,
+p {
+    font-weight: bold;
+}
+
+.items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* justify-items: stretch; */
+    flex-wrap: wrap;
+}
+
+.item-head {
+    color: #616161;
+    font-size: 3rem;
+}
+
+.item-caption {
+    font-size: 0.95rem;
+}
+
+
+/*  */
+/* .amount-division-shape {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 3px solid green;
+    background: transparent;
+    position: relative;
+    z-index: 10;
+}
+
+.amount-division-shape::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border: 5px solid red;
+    width: 260px;
+    height: 130px;
+    border-top-left-radius: 130px;
+    border-top-right-radius: 130px;
+    border-bottom: 0;
+    top: 0;
+    left: 0;
+} */
+
+.investment-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.investment-items-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.investment-item {
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.investment-details {
+    padding: 1rem 6rem 1rem 1rem;
+}
+
+.amount {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.5rem 0.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/*  */
+.button-section {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.button-section button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #00DDB2;
+    color: #ffffff;
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+}
