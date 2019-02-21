@@ -17,11 +17,6 @@ p {
     color: #CECECE;
 }
 
-.nav-row {
-    align-items: center;
-    justify-content: center;
-}
-
 .icons {
     text-decoration: none;
     cursor: pointer;
@@ -46,10 +41,11 @@ p {
     font-weight: bold;
 }
 
+
+/* Items Wrapper Style */
 .items-wrapper {
     display: flex;
     justify-content: space-between;
-    /* justify-items: stretch; */
     flex-wrap: wrap;
 }
 
@@ -62,36 +58,37 @@ p {
     font-size: 0.95rem;
 }
 
-
-/*  */
+/* Circle shape style */
 .amount-division-shape {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 15px solid #00C19E;
+    border: 20px solid #00C19E;
     background: transparent;
     position: relative;
     z-index: 10;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     text-align: center;
     font-size: 1.5rem;
+    padding: 2rem 0;
 }
 
+/* Creating the semi circle */
 .amount-division-shape::before {
     content: '';
     position: absolute;
     z-index: -1;
-    border: 15px solid #425975;
+    border: 20px solid #425975;
     width: 300px;
     height: 150px;
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
     transform: rotate(90deg);
     border-bottom: 0;
-    left: 3.75rem;
+    left: 3.5rem;
 }
 
 .amount-division-shape .debt-data p {
@@ -100,6 +97,10 @@ p {
 
 .amount-division-shape .equity-data p {
     color: #425975;
+}
+
+.amount-division-shape p {
+    margin-bottom: 0;
 }
 
 .investment-wrapper {
@@ -120,10 +121,12 @@ p {
     border: 1px solid lightgray;
     border-radius: 5px;
     margin-bottom: 1rem;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .investment-details {
-    padding: 1rem 6rem 1rem 1rem;
+    padding: 1rem 5rem 1rem 1rem;
 }
 
 .investment-plan {
@@ -132,10 +135,22 @@ p {
 
 .investment-meta {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
     color: #CECECE;
+}
+
+.cap-accent {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin-right: 1rem;
+}
+
+.min-amount {
+    justify-content: flex-end;
 }
 
 .amount {
@@ -146,7 +161,7 @@ p {
     font-size: 2rem;
 }
 
-/*  */
+/*  Button style */
 .button-section {
     margin: 1.5rem 0;
     text-align: center;
@@ -160,5 +175,49 @@ p {
     border: none;
     border-radius: 3px;
     padding: 0.5rem 2rem;
-    font-size: 2rem;
+    font-size: 1.25rem;
+}
+
+/* Media query for large/medium screens */
+@media screen and (max-width: 1199px) {
+
+    .investment-wrapper {
+        justify-content: center;
+    }
+
+    .investment-wrapper .amount-division-shape {
+        margin: 2rem 0;
+    }
+
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 420px) {
+    .nav-row {
+        justify-content: center;
+        align-items: center;
+        text-align: center !important;
+    }
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    .item-head {
+        font-size: 2.5rem;
+    }
+
+    .investment-details {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .investment-meta {
+        justify-content: space-between;
+    }
+
+    .amount {
+        padding: 4rem 0.5rem;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
 }
